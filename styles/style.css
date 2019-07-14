@@ -9,18 +9,7 @@ body {
 
 #container {
     margin: 0 auto;
-    margin-top: 20px;
     max-width: 700px;
-}
-
-#wrapper {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 50px 1fr;
-    grid-template-areas:
-        "nav nav"
-        "content content"
-    ;
 }
 
 .nav {
@@ -32,11 +21,12 @@ body {
 .nav ul {
     padding: 0px;
     margin: 0px;
+    width: 100%;
     background-color: lightcoral;
 }
 
 .nav ul li {
-    display: inline;
+    display: block;
     padding: 10px;
 }
 
@@ -47,20 +37,36 @@ body {
 }
 
 .content {
-    grid-area: content;
+    margin-left: 240px;
 }
 
-@media (min-width: 800px) {
-    #wrapper {
-        grid-template-areas:
-        "nav content"
-        "nav content"
-    ;
-    }
+.panel {
+    padding-top: 20px;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+@media (max-width: 800px) {
 
     .nav ul li {
-        display: block;
+        display: inline;
     }
+
+    .content {
+        margin-left: 0px;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+
+    .panel {
+        padding-top: 0px;
+    }    
 }
 
 
