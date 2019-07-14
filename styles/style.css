@@ -17,24 +17,32 @@ body {
     top: 0;
 }
 
-.nav ul {
+.navlist {
     padding: 0px;
     padding-bottom: 5px;
     margin: 0px;
     width: 100%;
     background-color: lightcoral;
+    background-color: lightsteelblue;
 }
 
-.nav ul li {
+.navitem {
     display: block;
+    width: auto;
     padding: 10px;
 }
 
-.nav ul li a {
+.navlink {
     font-weight: bold;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25em;
 }
+
+.navlink:active {
+    color: black;
+}
+
+.spacer { display: none;}
 
 .content {
     margin-left: 240px;
@@ -52,27 +60,96 @@ h1 {
     font-size: 2em;
 }
 
+footer {
+    font-style: italic;
+    padding-bottom: 40px;
+}
+
 @media (max-width: 800px) {
 
-    .nav ul {
+    .nav {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navlist {
         padding: 10px;
     }
 
-    .nav ul li {
-        display: inline;
+    .navgroup {
+        display: inline-block;
+    }
+
+    .navitem {
+        display: inline-block;
+        padding: 0px;
+        padding-right: 20px;
+    }
+
+    .navlink {
+        font-size: 1em;
     }
 
     .content {
         margin-left: 0px;
-        padding-left: 20px;
-        padding-right: 30px;
+        margin-top: 0px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .panel {
-        padding-top: 0px;
+        padding-top: 40px;
     }    
 }
 
+@media (max-width: 426px) {
+
+    .nav {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navlist {
+        padding: 20px;
+    }
+
+    .navitem {
+        display: inline-block;
+        padding: 0px;
+        padding-right: 20px;
+    }
+
+    .navlink {
+        font-size: 1.25em;
+    }
+
+    .content {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+
+    .content p {
+        font-size: 1.25em;
+    }
+
+    .panel {
+        padding-top: 10px;
+    }    
+
+    footer {
+        padding-bottom: 80px;
+    }
+}
 
 /*
  *Styling
