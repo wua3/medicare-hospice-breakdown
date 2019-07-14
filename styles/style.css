@@ -4,6 +4,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
+    color: #333;
 }
 
 #container {
@@ -23,7 +24,8 @@ body {
     margin: 0px;
     width: 100%;
     background-color: lightcoral;
-    background-color: lightsteelblue;
+    background-color: #ebebeb;
+    background-color: peru;
 }
 
 .navitem {
@@ -33,13 +35,15 @@ body {
 }
 
 .navlink {
+    color: #636363;
+    color: floralwhite;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.25em;
 }
 
 .navlink:active {
-    color: black;
+    color: #333;
 }
 
 .spacer { display: none;}
