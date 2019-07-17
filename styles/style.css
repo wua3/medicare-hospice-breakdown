@@ -1,11 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap');
+
+:root {
+    --main-color: #333;
+}
 
 body {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat';
+    font-family: 'DM Sans';
     color: #333;
 }
+
+h1 {
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--main-color);
+}
+
+.sub {
+    font-weight: 500;
+}
+
+h2 {
+    color: var(--main-color);
+}
+
+h1, h2 {
+    margin-top: 25px;
+}
+
+.highlight {
+    font-weight: 500;
+    background-color: #fff2ac;
+    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+}
+
 
 #container {
     margin: 0 auto;
@@ -15,7 +44,7 @@ body {
 .nav {
     grid-area: nav;
     position: fixed;
-    top: 0;
+    top: 50px;
 }
 
 .navlist {
@@ -23,9 +52,8 @@ body {
     padding-bottom: 5px;
     margin: 0px;
     width: 100%;
-    background-color: lightcoral;
-    background-color: #ebebeb;
-    background-color: peru;
+    border-radius: 5px;
+    background-color: #efefef;
 }
 
 .navitem {
@@ -35,9 +63,8 @@ body {
 }
 
 .navlink {
-    color: #636363;
-    color: floralwhite;
-    font-weight: bold;
+    color: #333;
+    font-weight: 500;
     text-decoration: none;
     font-size: 1.25em;
 }
@@ -60,9 +87,6 @@ header p {
     font-size: 1.5em;
 }
 
-h1 {
-    font-size: 2em;
-}
 
 footer {
     font-style: italic;
@@ -73,6 +97,7 @@ footer {
 
     .nav {
         position: fixed;
+        top: 0px;
         left: 0;
         width: 100%;
         text-align: center;
@@ -80,6 +105,9 @@ footer {
 
     .navlist {
         padding: 10px;
+        /* -webkit-box-shadow: 0 0px 2px 0px black;
+        -moz-box-shadow: 0 0px 2px 0px black;
+        box-shadow: 0 0px 2px 0px black; */ 
     }
 
     .navgroup {
