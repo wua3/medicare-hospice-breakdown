@@ -1,0 +1,25 @@
+#main-chart {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#main-chart svg rect {
+    fill: #4845ff;
+    opacity: 0.3;
+}
+
+#main-chart svg rect:hover {
+    fill: #ffe359;
+}
+
+.char-percent {
+    font-weight: 500;
+}
+
+.caption {
+    fill: #4845ff;
+    font-weight: 500;
+}

@@ -17,6 +17,10 @@ h1 {
     color: var(--main-color);
 }
 
+h1:hover, h2:hover {
+    text-shadow: 1px 2px #ffe359;
+}
+
 .sub {
     font-weight: 500;
 }
@@ -71,6 +75,10 @@ h1, h2 {
 
 .navlink:active {
     color: #333;
+}
+
+.navlink:hover {
+    color: #5e583b;
 }
 
 .spacer { display: none;}
@@ -134,6 +142,12 @@ footer {
     .panel {
         padding-top: 40px;
     }    
+}
+
+@media (max-width: 620px) {
+    #main-chart {
+        display: none;
+    }
 }
 
 @media (max-width: 426px) {

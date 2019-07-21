@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Breakdown: Hospice Deficiencies</title>
-
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Breakdown: Hospice Deficiencies</title>
 </head>
 
 <body>
@@ -27,7 +25,7 @@
         <div class="content">
             <article class="panel" id="home">
                 <header>
-                    <h1>The US Hospice System: troubling, deficient, and unaccountable</h1>
+                    <h1>The U.S. Hospice System: troubling, deficient, and unaccountable</h1>
                     <p class="sub">Breaking down the Inspector General reports</p>
                     <span class="byline">Aileen Wu • July 13th, 2019</span>
                 </header>
@@ -39,7 +37,15 @@
 
             <article class="panel" id="numbers">
                 <h2>By the numbers: quick takeaways</h2>
-                <img src="" alt="viz" />
+                <div class="graphic-wrapper">
+                    <link href="styles/chart.css" rel="stylesheet" type="text/css">
+                    <h4>Of surveyed hospices ...</h4>
+                    <div id="main-chart">
+                    </div>
+                    <p>between 2012 and 2016.</p>
+                    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+                    <script src="scripts/chart.js"></script>
+                </div>
                 <h4>Scope of the reports</h4>
                 <p>The first of the reports is a relatively extensive nationwide study on hospice deficiencies. It’s unique in that both hospices surveyed directly by the Center for Medicare & Medicaid Services (CMS) and hospices surveyed by accrediting organizations are accounted for.* 95% of the 4,799 hospices under Medicare were surveyed.</p>
                 <p>The second report dove into twelve cases of beneficiary harm from a sample of 50 serious deficiencies cited by State agencies in 2016. For each case, the report also looked at how the case was handled.</p>
@@ -51,19 +57,45 @@
                 <p>A <span class="highlight">deficiency</span> is a violation of one of the Conditions of Participation. These conditions are federal requirements to participate in Medicare. The Inspector General writes that they “consist of standards for health and safety … [and] are intended to ensure the quality of care and services provided by hospices.”</p>
                 <p>These deficiencies are cited by surveyors, and can fall into two categories: <span class="highlight">condition-level</span> and <span class="highlight">standard-level</span>. The condition-level deficiency is what is informally referred to as a “serious” deficiency, and is cited when requirements are so violated that the hospice is limited in its ability to provide adequate care, or that it directly negatively affects the “health and safety of patients.”</p>
                 <h4>Most common deficiencies</h4>
-                <img src="" alt="viz" />
-                <h4>Map of deficiencies</h4>
-                <img src="" alt="viz" />
-                <img src="" alt="viz" />
-                <img src="" alt="viz" />
-                <img src="" alt="viz" />
+                <div class="">
+                    <div class="">
+                        bar viz
+                    </div>
+                </div>
+                <h4>Map: deficiencies by state</h4>
+                <div class="graphic-wrapper">
+                        <link rel="stylesheet" type="text/css" href="styles/map.css">
+                        <div id="map">
+                        </div>
+                        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+                        <script src="https://d3js.org/topojson.v2.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                        <script src="scripts/map.js"></script>
+                    </div>
+                    <div class="">
+                    <div class="">
+                        <p>A third of hospices had complaints filed against them, and for almost half of those hospices, the complaints were severe.</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <p>300 hospices were identified as poor performers in 2016, which is 18% of the hospices surveyed in 2016. 88% of them had a history of other violations.</p>
+                    </div>
+                </div>
 
                 <h3>Current systems for accountability and reporting harm are failing.</h3>
                 <p>In the second report, the Inspector General covers twelve heartbreaking cases of abuse and neglect. An Alzheimer’s patient developed pressure ulcers during hospice care. Left untreated, they became gangrenous. Maggots developed around another beneficiary’s feeding tube. For another, a hospice did not recognize signs of possible sexual assault.</p>
 
                 <h4>Standards for reporting harm are loosely held</h4>
-                <img src="" alt="viz" />
-
+                <div class="">
+                    <div class="">
+                            <p>Reporting harm as a:</p>
+                            <p>Hospice: requirements only hold in one specific, narrow circumstance</p>
+                            <p>Surveyor: requirements were, until March 5, 2019, barely specified</p>
+                            <p>Beneficiary/caregiver: instructions on how to do so were extremely confusing and unclear</p>
+                        </div>
+                </div>
+    
                 <h4>Accountability is rarely a consequence of reporting harm</h4>
                 <p>Citing “immediate jeopardy” is the highest level of action a surveyor can take and indicates beneficiary harm. <span class="highlight">However, in the 12 cases, only 5 hospices were cited for immediate jeopardy, despite the beneficiaries in every circumstance being significantly harmed.</span> Furthermore, the only requirement for the hospice after being cited for immediate jeopardy is to submit a plan for change⁠—staff members are rarely disciplined and it’s difficult to follow up.</p>
                 <p>The only penalty that the CMS can impose is removing a hospice from the Medicare program; the Inspector General writes that “CMS may take this step only if the provider fails to comply with the survey and plan of correction process—for example, by not submitting an adequate plan of correction in a timely manner. CMS has no other penalties at its disposal.”</p>
@@ -115,4 +147,6 @@
             <h2> Pongamonos en contacto</h2>
         </article>
     </section> -->
+
+    
 </body>
