@@ -27,3 +27,8 @@
 .reporting-circle p {
     opacity: 0.9;
 }
+
+.reporting-circle li {
+    font-size: .9em;
+    opacity: 0.9;
+}
