@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+.reporting-circle:hover {
+    background-color: #ffe359;
+}
+
 .reporting-circle p {
     opacity: 0.9;
 }

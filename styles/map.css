@@ -11,10 +11,6 @@
     height: auto;
 }
 
-/* .statesVisible:hover {
-    fill: #ffe359;
-}
-   */
 .state-borders {
     fill: none;
     stroke: #fff;
@@ -36,3 +32,14 @@
     width: 20px;
     height: 20px;
 }
+
+.key-wrapper {
+    margin-left: 30px;
+}
+
+.key {
+    display: inline;
+    padding-right: 45px;
+}
+
+
