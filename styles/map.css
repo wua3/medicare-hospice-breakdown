@@ -11,10 +11,10 @@
     height: auto;
 }
 
-.statesVisible:hover {
+/* .statesVisible:hover {
     fill: #ffe359;
 }
-  
+   */
 .state-borders {
     fill: none;
     stroke: #fff;
@@ -30,4 +30,9 @@
 
 .label text {
     fill: #000;
+}
+
+.legend-square {
+    width: 20px;
+    height: 20px;
 }

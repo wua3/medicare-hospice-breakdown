@@ -1,12 +1,12 @@
 /* MAP */
 
-var tooltip = d3.select("#map")
-.append("div")
-.style("position", "absolute")
-.style("z-index", "10")
-.style("visibility", "hidden")
-.style("visibility", "visible")
-.text("a simple tooltip");
+// var tooltip = d3.select("#map")
+// .append("div")
+// .style("position", "absolute")
+// .style("z-index", "10")
+// .style("visibility", "hidden")
+// .style("visibility", "visible")
+// .text("a simple tooltip");
 
 
 var svg = d3
@@ -21,7 +21,7 @@ var path = d3.geoPath();
 var data = d3.map();
 var colorScale = d3.scaleLinear()
   .domain([50, 100])
-  .range(["#BDC8FF", "#002BFF"]);
+  .range(["#fff2ac", "#fc9b46"]);
 
 d3.queue()
   .defer(d3.json, "https://raw.githubusercontent.com/wua3/medicare-hospice-breakdown/master/map-data/us-10m.v1.json")
@@ -51,9 +51,30 @@ function ready(error, us) {
   svg.append("path")
       .attr("class", "state-borders")
       .attr("d", path(topojson.mesh(us, us.objects.states, function (a, b) { return a !== b; })));
+  
+  var legendset = [50, 60, 70, 80, 90, 100];
+    
+  // // legend
+  var legend = d3
+      .select("#legend")
+      .append("svg")
+      .attr("width", "100%")
+      .attr("height", "20px");
+  
+  legend.selectAll("rect")
+      .data(legendset)
+      .enter().append("rect")
+      .attr("class", "legend-square")
+      .attr("fill", function(d) {
+        return colorScale(d);
+      })
+      .attr("x", function(d, i) {
+        return (20 * i;
+      })
+      ;
+  
 
-
-      
+    
       // //    
   // svg.append("rect")
   //     .attr("class", "label")

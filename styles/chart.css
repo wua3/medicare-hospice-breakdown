@@ -7,12 +7,12 @@
 }
 
 #main-chart svg rect {
-    fill: #4845ff;
-    opacity: 0.3;
+    fill: #fc9b46;
+    opacity: 1;
 }
 
 #main-chart svg rect:hover {
-    fill: #ffe359;
+    fill: #ffe359 ;
 }
 
 .char-percent {
@@ -20,6 +20,7 @@
 }
 
 .caption {
-    fill: #4845ff;
+    fill: #000;
+    opacity: .9;
     font-weight: 500;
 }

@@ -49,15 +49,15 @@
                     <script src="scripts/chart.js"></script>
                 </div>
                 <h4>Scope of the reports</h4>
-                <p>The first of the reports is a relatively extensive nationwide study on hospice deficiencies. It’s unique in that both hospices surveyed directly by the Center for Medicare & Medicaid Services (CMS) and hospices surveyed by accrediting organizations are accounted for.* 95% of the 4,799 hospices under Medicare were surveyed.</p>
+                <p>The first of the reports is a relatively extensive nationwide study on hospice deficiencies. It’s unique in that both hospices surveyed directly by the Center for Medicare & Medicaid Services (CMS) and hospices surveyed by accrediting organizations are accounted for.* <span class="highlight">95% of the 4,799 hospices under Medicare were surveyed.</span></p>
                 <p>The second report dove into twelve cases of beneficiary harm from a sample of 50 serious deficiencies cited by State agencies in 2016. For each case, the report also looked at how the case was handled.</p>
             </article>
 
             <article class="panel" id="inside">
                 <h2>Inside Medicare hospices</h2>
                 <h3>What exactly is a deficiency?</h3>
-                <p>A <span class="highlight">deficiency</span> is a violation of one of the Conditions of Participation. These conditions are federal requirements to participate in Medicare. The Inspector General writes that they “consist of standards for health and safety … [and] are intended to ensure the quality of care and services provided by hospices.”</p>
-                <p>These deficiencies are cited by surveyors, and can fall into two categories: <span class="highlight">condition-level</span> and <span class="highlight">standard-level</span>. The condition-level deficiency is what is informally referred to as a “serious” deficiency, and is cited when requirements are so violated that the hospice is limited in its ability to provide adequate care, or that it directly negatively affects the “health and safety of patients.”</p>
+                <p>A <b>deficiency</b> is a violation of one of the Conditions of Participation. These conditions are federal requirements to participate in Medicare. The Inspector General writes that they “consist of standards for health and safety … [and] are intended to ensure the quality of care and services provided by hospices.”</p>
+                <p>These deficiencies are cited by surveyors, and can fall into two categories: <b>condition-level</b> and <b>standard-level</b>. The condition-level deficiency is what is informally referred to as a “serious” deficiency, and is cited when requirements are so violated that the hospice is limited in its ability to provide adequate care, or that it directly negatively affects the “health and safety of patients.”</p>
                 <h4>Most common deficiencies</h4>
                 <div class="">
                     <div class="">
@@ -67,8 +67,8 @@
                 <h4>Map: deficiencies by state</h4>
                 <div class="graphic-wrapper">
                         <link rel="stylesheet" type="text/css" href="styles/map.css">
-                        <div id="map">
-                        </div>
+                        <div id="map"></div>
+                        <div id="legend"></div>
                         <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
                         <script src="https://d3js.org/topojson.v2.min.js"></script>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -89,13 +89,12 @@
                 <p>In the second report, the Inspector General covers twelve heartbreaking cases of abuse and neglect. An Alzheimer’s patient developed pressure ulcers during hospice care. Left untreated, they became gangrenous. Maggots developed around another beneficiary’s feeding tube. For another, a hospice did not recognize signs of possible sexual assault.</p>
 
                 <h4>Standards for reporting harm are loosely held</h4>
-                <div class="">
-                    <div class="">
-                            <p>Reporting harm as a:</p>
-                            <p>Hospice: requirements only hold in one specific, narrow circumstance</p>
-                            <p>Surveyor: requirements were, until March 5, 2019, barely specified</p>
-                            <p>Beneficiary/caregiver: instructions on how to do so were extremely confusing and unclear</p>
-                        </div>
+                <div class="graphic-wrapper">
+                    <link rel="stylesheet" type="text/css" href="styles/reporting.css">
+                    <div id="reporting">
+                    </div>
+                    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+                    <script src="scripts/reporting.js"></script>
                 </div>
     
                 <h4>Accountability is rarely a consequence of reporting harm</h4>
@@ -107,18 +106,17 @@
             <article class="panel" id="matter">
                 <h2>Why these reports matter</h2>
                 <p>Besides the obvious tragedy of systems failing to provide services that its beneficiaries place trust (and dollars) into to provide, it’s especially tragic within hospice care since the population seeking end-of-life-care is, as you’d imagine, vulnerable and often unable to advocate for themselves.</p>
-                <p>That population is rapidly growing. From 2006 to 2017, the number of Medicare beneficiaries for hospice care jumped from 930,000 to 1.4 million. (Almost all hospices in the U.S. are covered through Medicare.) The report concludes that 87%⁠—the vast majority⁠—of hospices fail to meet the requirements outlined by CMS. One in every five hospices failed to meet the requirements in a way that encroached on either its ability to provide care or the wellness of its patients! While these vulnerabilities are found to be impacting beneficiaries, the Medicare hospice program has grown in both the number of beneficiaries, consequently, its funding. In 2017, $17.8 billion was used for Medicare hospice care.</p>
+                <p>That population is rapidly growing. <span class="highlight">From 2006 to 2017, the number of Medicare beneficiaries for hospice care jumped from 930,000 to 1.4 million.</span> (Almost all hospices in the U.S. are covered through Medicare.) The report concludes that 87%⁠—the vast majority⁠—of hospices fail to meet the requirements outlined by CMS. One in every five hospices failed to meet the requirements in a way that encroached on either its ability to provide care or the wellness of its patients! While these vulnerabilities are found to be impacting beneficiaries, the Medicare hospice program has grown in both the number of beneficiaries, consequently, its funding. In 2017, $17.8 billion was used for Medicare hospice care.</p>
 
                 <h3>What’s next</h3>
-                <p>Concerns have long been raised about the staffing and accountability of hospices under Medicare, especially from the Office of the Inspector General, who last year published a thorough portfolio of the vulnerabilities in the system. Citing gaps in provided services, cases of poor quality care, inappropriate billing and related fraud schemes (Medicare hospice fraud costs as much as $60 billion a year), and ways the payment system financially incentivized minimizing services and maintaining low-needs beneficiaries for as long as they could, the Inspector made several recommendations, half of which were accepted by CMS.</p>
-                <p>For the two July 2019 reports we’re breaking down today, CMS concurred with the vast majority of the Inspector General’s recommendations. Progress, however, is incrementalist; the back-and-forth on specific points gets easily lost in bureaucracy. For example, the recommendation to include on Hospice Compare (CMS’s website for patients choosing hospices) the survey reports from state agencies was rejected; the grounds for doing so was that, because CMS does not currently have authorization to publish survey results from accrediting organization, to only include state survey results would be misleading.</p>
+                <p><span class="highlight">Concerns have long been raised about the staffing and accountability of hospices under Medicare</span>, especially from the Office of the Inspector General, who last year published a thorough portfolio of the vulnerabilities in the system. Citing gaps in provided services, cases of poor quality care, inappropriate billing and related fraud schemes (Medicare hospice fraud costs as much as $60 billion a year), and ways the payment system financially incentivized minimizing services and maintaining low-needs beneficiaries for as long as they could, the Inspector made several recommendations, half of which were accepted by CMS.</p>
+                <p>For the two July 2019 reports we’re breaking down today, CMS concurred with the vast majority of the Inspector General’s recommendations. <span class="highlight">Progress, however, is incrementalist; the back-and-forth on specific points gets easily lost in bureaucracy.</span> For example, the recommendation to include on Hospice Compare (CMS’s website for patients choosing hospices) the survey reports from state agencies was rejected; the grounds for doing so was that, because CMS does not currently have authorization to publish survey results from accrediting organization, to only include state survey results would be misleading.</p>
                 <p>In 1967, Cicely Saunders pioneered the modern hospice care system, which embraced the patient as an individual to be treated with dignity and compassion. It is very difficult to reconcile the cases of neglect and abuse in the July reports, of hospice fraud and of providing intentionally incomplete information in the 2018 report, with this vision of respect and duty.</p>
 
                 <h4>Further Reading</h4>
                 <p>July 2019 study on deficiencies within Medicare Hospice</p>
                 <p>July 2019 report on cases of severe difficiencies within Medicare Hospice</p>
                 <p>July 2018 portfolio on vulnerabilities within Medicare Hospice</p>
-                <footer>Written in Google Docs, coded in HTML/CSS (VSCode). Data visualized in ____, illustrations drawn in Photoshop.</footer>
             </article>
 
         </div>

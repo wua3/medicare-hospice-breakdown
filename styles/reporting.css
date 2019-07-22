@@ -1,0 +1,25 @@
+#reporting {
+    width: 100%;
+    height: auto;
+
+}
+
+.stake-title {
+    font-weight: bold;
+}
+
+.reporting-circle {
+    height: auto;
+    border-radius: 20px;
+    background-color: #fc9b46;
+    display: block;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.reporting-circle p {
+    opacity: 0.9;
+}
