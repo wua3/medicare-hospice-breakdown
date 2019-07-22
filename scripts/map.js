@@ -69,7 +69,7 @@ function ready(error, us) {
         return colorScale(d);
       })
       .attr("x", function(d, i) {
-        return (20 * i;
+        return (20 * i);
       })
       ;
   
