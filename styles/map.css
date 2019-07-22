@@ -24,4 +24,10 @@
     pointer-events: none;
 }
   
-  
+.label {
+    fill: #efefef;
+}
+
+.label text {
+    fill: #000;
+}

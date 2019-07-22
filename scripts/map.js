@@ -1,12 +1,19 @@
-/* TITLE */
-
-
 /* MAP */
+
+var tooltip = d3.select("#map")
+.append("div")
+.style("position", "absolute")
+.style("z-index", "10")
+.style("visibility", "hidden")
+.style("visibility", "visible")
+.text("a simple tooltip");
+
+
 var svg = d3
   .select("#map")
   .append("svg")
     .attr("width", $("#map").width())
-    .attr("height", .625 * $("#map").width())
+    .attr("height", .8*$("#map").width())
     .attr("viewBox", "0 0 960 600");
 
 var path = d3.geoPath();
@@ -44,6 +51,37 @@ function ready(error, us) {
   svg.append("path")
       .attr("class", "state-borders")
       .attr("d", path(topojson.mesh(us, us.objects.states, function (a, b) { return a !== b; })));
+
+
+      
+      // //    
+  // svg.append("rect")
+  //     .attr("class", "label")
+  //     .attr("x", "5%")
+  //     .attr("y", "90%")
+  //     .attr("width", "30%")
+  //     .attr("height", "25%");
+    
+  // svg.selectAll(".label")
+  //   .append("text")
+  //     .attr("class", "state-name")
+  //     .attr("x", "5%")
+  //     .attr("y", "90%")
+  //     .text("Testing");
+  
+  // svg.selectAll(".label")
+  //   .append("text")
+  //     .attr("class", "num-hospice")
+  //     .attr("x", "5%")
+  //     .attr("y", "90%")
+  //     .text("0 hospices surveyed");
+
+  // svg.selectAll(".label")
+  //   .append("text")
+  //     .attr("class", "perc-def")
+  //     .attr("x", "5%")
+  //     .attr("y", "90%")
+  //     .text("90% had a deficiency between 2012 and 2016");
 }
 
 
